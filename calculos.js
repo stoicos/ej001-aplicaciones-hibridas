@@ -1,6 +1,12 @@
-const addition = () => {}
+const addition = (number1, number2) => number1 + number2
 
-const division = () => {}
+const division = (number1, number2) => {
+    if (number2 > number1) {
+        return "No es posible hacer esta división: El divisor debe ser menor que el dividendo"
+    } else {
+        return number1 / number2
+    }
+}
 
 function theHighest(arr) {
     let highest = 0
@@ -10,4 +16,4 @@ function theHighest(arr) {
     return highest
 }
 
-console.log(theHighest([1, 2, 1, 3, 4, 5, 1]))
+console.log(addition(1, 2))
